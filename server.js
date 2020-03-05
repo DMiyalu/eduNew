@@ -15,23 +15,9 @@ app.set('view engine', 'ejs');
 
 // gestion des routes
 app.get('/', function(request, response) {
-        response.render('accueil')
-    })
-    .get('/projets', function(request, response) {
-        response.render('projets')
-    })
-    .get('/projets_details', function(request, response) {
-        response.render('projets_details')
-    })
-    .get('/investir', function(request, response) {
-        response.render('commentInvestir')
-    })
-    .get('/leverDesFonds', function(request, response) {
-        response.render('leverDesFonds')
-    })
-    .get('/contact', function(request, response) {
-        response.render('contact')
-    });
+    response.render('index');
+});
+
 //gestion des erreurs 404
 
 app.use(function(req, res, next) {
