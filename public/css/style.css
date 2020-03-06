@@ -34,10 +34,14 @@ ul {
 }
 
 ul li {
-    color: white;
     list-style-type: none;
+    color: white;
+}
+
+ul a {
     margin: 2%;
     font-size: 12px;
+    text-decoration: none;
 }
 
 .logo {
